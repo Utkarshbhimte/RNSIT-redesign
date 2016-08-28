@@ -11,7 +11,6 @@ header
   font-family: 'Josefin Sans', sans-serif
   background:
     attachment: fixed
-    position: fixed
     size: cover
     color: rgba(255, 0, 0, 0.25)
     image: url('../images/jumbo-pic.JPG')
@@ -30,9 +29,10 @@ header
         list-style: none
         margin: 5px 10px
         font-size: 18px
+        white-space: nowrap
         a
+          white-space: nowrap
           color: white
-
           text-decoration: none !important
           transition: all .3s ease-in-out
           &:hover
@@ -42,6 +42,7 @@ header
             border-top: px solid white
             border-bottom: 8px solid white
             min-width: 100px
+
       #rnsit-logo
         float: left!important
         margin-right: auto
@@ -52,7 +53,7 @@ header
           repeat: no-repeat
         height: 100px
         width: 100px
-        transition: all .3s ease
+        transition:all .3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
         &:hover
           background-color: transparent
           transform:scale(1.1)
@@ -88,6 +89,10 @@ header
           background-color: white
           padding: .5em .1em .5em 1.8em
           box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.75)
+          transition: .1s all ease
+          transform-origin: right
+          &:hover
+            transform: scale(1.1)
 #description
   padding: 3em 0
   font-family: 'Josefin Sans', sans-serif
@@ -99,11 +104,13 @@ header
   background:
     color: #e3e3e3
   z-index:2
+
+.heading
+  margin: 10vh 0
+  font-size: 44px
+
 #creds
-  h2
-    margin: 10vh 0
-    font-family: 'Josefin Sans', sans-serif
-    font-size: 44px
+  font-family: 'Josefin Sans', sans-serif
   .row
     .col-md-3
       height: 200px
@@ -111,3 +118,28 @@ header
         repeat: no-repeat
         postion: center
         size: contain
+#reach-us
+  font-family: 'Josefin Sans', sans-serif
+  font-size: 1.4em
+  padding-left: 3em
+  margin: 20vh 0px
+  background-color: #f5f5f5
+  .col-md-6
+    .container
+      padding: 1em 2em
+      h3
+        border: 1px solid black
+        display: inline-block
+        padding: .5em 1em
+        margin: .5em
+        margin-bottom: 1em
+        font-weight: bold
+      #address-wrap
+        padding-left: 1em
+        a
+          display: inline-block
+          text-decoration: none
+          background-color: black
+          color: white
+          padding: .3em 1em
+          margin: 20px 0px

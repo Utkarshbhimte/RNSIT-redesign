@@ -12,7 +12,7 @@
 
 	<!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -39,10 +39,11 @@
 		<nav>
 			<ul>
 				<li id="rnsit-logo"></li>
+				<li><a href="#">Admission</a></li>
 				<li><a href="#">Faculty</a></li>
-				<li><a href="#">Administration</a></li>
-				<li><a href="#">Students</a></li>
 				<li><a href="#">Alumni</a></li>
+				<li><a href="#">Campus Life</a></li>
+				<li><a href="#">About Us</a></li>
 				<li><a href="#">Contact Us</a></li>
 			</ul>
 		</nav>
@@ -72,35 +73,95 @@
 			accredited engineering colleges in bengaluru.
 		</div>
 	</div>
-	<div id='stats'>
-		<div class='container-fluid row'>
-			<div class='col-md-3'>
-				<h4>STUDENTS</h4>
-				<span class="counter">1,234,567</span>
-			</div>
-			<div class='col-md-3'>
-				<h4>STUDENTS</h4>
-				<span class="counter">1,234,567</span>
-			</div>
-			<div class='col-md-3'>
-				<h4>STUDENTS</h4>
-				<span class="counter">1,234,567</span>
-			</div>
-			<div class='col-md-3'>
-				<h4>STUDENTS</h4>
-				<span class="counter">1,234,567</span>
-			</div>
-	</div>
-	</div>
+	<!--
+<div id='stats'>
+	<div class='container-fluid row'>
+		<div class='col-md-3'>
+			<h4>STUDENTS</h4>
+			<span class="counter">1,234,567</span>
+		</div>
+		<div class='col-md-3'>
+			<h4>STUDENTS</h4>
+			<span class="counter">1,234,567</span>
+		</div>
+		<div class='col-md-3'>
+			<h4>STUDENTS</h4>
+			<span class="counter">1,234,567</span>
+		</div>
+		<div class='col-md-3'>
+			<h4>STUDENTS</h4>
+			<span class="counter">1,234,567</span>
+		</div>
+</div>
+</div>
+
+-->
 
 	<div id='creds'>
 		<div class='container'>
-			<h2 align="center">Affiliations & Accreditions</h2>
+			<h2 align="center" class="heading">Affiliations & Accreditions</h2>
 			<div class="row">
 				<div class='col-md-3' style="background-image:url('images/vtu.jpg')"></div>
 				<div class='col-md-3' style="background-image:url('images/aicte.jpg')"></div>
 				<div class='col-md-3' style="background-image:url('images/iste.png')"></div>
 				<div class='col-md-3' style="background-image:url('images/nba.jpg')"></div>
+			</div>
+		</div>
+	</div>
+	<div id="reach-us">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="container">
+					<p>
+						<h3>Reach Us</h3>
+						<br>
+						<div id="address-wrap">
+							RNSIT,
+							<br> Dr.Vishnuvardhan Road,
+							<br>Rajarajeshwarinagar,
+							<br> Channasandra,
+							<br>Bengaluru, Karnataka 560098
+							<br><strong>Phone:</strong> 080 2861 1881
+							<br><a href="https://www.google.co.in/maps/dir//RNS+Institute+of+Technology,+Dr.Vishnuvardhan+Road,+Rajarajeshwarinagar,+Channasandra,+Bengaluru,+Karnataka+560098/@12.9021902,77.5163933,17z/data=!4m15!1m6!3m5!1s0x3bae3fa7243af9c3:0x9bed6669a38d1c3!2sRNS+Institute+of+Technology!8m2!3d12.9021902!4d77.518582!4m7!1m0!1m5!1m1!1s0x3bae3fa7243af9c3:0x9bed6669a38d1c3!2m2!1d77.518582!2d12.9021902" target="_blank">Click here for Directions</a>
+						</div>
+					</p>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+				<div style='overflow:hidden;height:400px;width:700px;'>
+					<div id='gmap_canvas' style='height:400px;width:700px;'></div>
+					<div><small><a href="http://www.embedgooglemaps.com">Generate your Google map here, quick and easy!</a></small></div>
+					<div><small><a href="https://binaireoptieservaringen.nl/">Lees hier ervaringen van diverse binaire opties aanbieders</a></small></div>
+					<style>
+						#gmap_canvas img {
+							max-width: none!important;
+							background: none!important
+						}
+					</style>
+				</div>
+				<script type='text/javascript'>
+					function init_map() {
+						var myOptions = {
+							zoom: 10,
+							center: new google.maps.LatLng(12.902669500000007, 77.52731229609388),
+							mapTypeId: google.maps.MapTypeId.ROADMAP
+						};
+						map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+						marker = new google.maps.Marker({
+							map: map,
+							position: new google.maps.LatLng(12.902669500000007, 77.52731229609388)
+						});
+						infowindow = new google.maps.InfoWindow({
+							content: '<strong>Reach Us</strong><br>RNSIT, Dr.Vishnuvardhan Road, Rajarajeshwarinagar, Channasandra, Bengaluru, Karnataka 560098<br>'
+						});
+						google.maps.event.addListener(marker, 'click', function() {
+							infowindow.open(map, marker);
+						});
+						infowindow.open(map, marker);
+					}
+					google.maps.event.addDomListener(window, 'load', init_map);
+				</script>
 			</div>
 		</div>
 	</div>
