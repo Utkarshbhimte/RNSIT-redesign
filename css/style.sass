@@ -1,0 +1,102 @@
+@import 'https://fonts.googleapis.com/css?family=Abel|Josefin+Sans|Ubuntu+Condensed'
+
+html
+  margin: 0
+  font-family: 'Josefin Sans', sans-serif
+  padding: 0
+  overflow-x: hidden
+
+header
+  height: 100vh
+  font-family: 'Josefin Sans', sans-serif
+  background:
+    position: fixed
+    size: cover
+    color: #e3e3e3
+  nav
+    background-color: transparent
+    ul
+      display: flex
+      justify-content: flex-end
+      align-items: center
+      padding: 2vh 5vw
+      width: 100%
+      position: absolute
+      li
+        list-style: none
+        margin: 5px 10px
+        font-size: 18px
+        a
+          color: black
+          text-decoration: none !important
+          transition: all .3s ease-in-out
+          &:hover
+            color: white
+            background-color: black
+            padding: 1em
+            border-top: px solid white
+            border-bottom: 8px solid white
+            min-width: 100px
+      #rnsit-logo
+        float: left!important
+        margin-right: auto
+        background:
+          image: url('../images/logo.png')
+          size: contain
+          position: center
+          repeat: no-repeat
+        height: 100px
+        width: 100px
+        transition: all .3s ease
+        &:hover
+          background-color: transparent
+          transform:scale(1.1)
+
+#splash-screen
+  color: #c6c6c6
+  font-family: 'Josefin Sans', sans-serif
+  height: 100%
+  font-size: 1.5em
+  .row
+    display: flex
+    justify-content: space-between
+    height: 100%
+    align-items: center
+    .col-md-8
+      padding-left: 10vw !important
+      h1
+        display: block
+        font-size: 152px
+        transition: 1s all ease
+        padding: 0
+      &:hover
+        translate: scale(1.1)
+    #notice-board
+      ul
+        li
+          list-style: none
+          margin-bottom: 15px
+          font-size: 18px
+#description
+  padding: 3em 0
+  font-family: 'Josefin Sans', sans-serif
+  font-size: 21px
+  z-index:4
+#stats
+  min-height: 300px
+  box-shadow:inset 0px 0px 37px -5px rgba(0,0,0,0.75)
+  background:
+    color: #e3e3e3
+  z-index:2
+#creds
+  h2
+    margin: 10vh 0
+    font-family: 'Josefin Sans', sans-serif
+    font-size: 44px
+  .row
+    .col-md-3
+      height: 200px
+      background:
+        repeat: no-repeat
+        postion: center
+        size: contain
