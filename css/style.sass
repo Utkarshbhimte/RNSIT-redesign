@@ -12,7 +12,10 @@ header
   background:
     position: fixed
     size: cover
-    color: #e3e3e3
+    color: rgba(255, 0, 0, 0.25)
+    image: url('../images/jumbo-pic.JPG')
+    repeat: no-repeat
+    background-blend-mode: darken
   nav
     background-color: transparent
     ul
@@ -27,7 +30,8 @@ header
         margin: 5px 10px
         font-size: 18px
         a
-          color: black
+          color: white
+
           text-decoration: none !important
           transition: all .3s ease-in-out
           &:hover
@@ -54,6 +58,7 @@ header
 
 #splash-screen
   color: #c6c6c6
+  background-color: transparentize(black, .5)
   font-family: 'Josefin Sans', sans-serif
   height: 100%
   font-size: 1.5em
@@ -72,11 +77,16 @@ header
       &:hover
         translate: scale(1.1)
     #notice-board
+      padding-right: 0px !important
       ul
         li
           list-style: none
-          margin-bottom: 15px
+          margin-bottom: 10px
           font-size: 18px
+          display: block
+          background-color: white
+          padding: .5em .1em .5em 1.8em
+          box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.75)
 #description
   padding: 3em 0
   font-family: 'Josefin Sans', sans-serif
