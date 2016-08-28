@@ -18,6 +18,9 @@ header
     background-blend-mode: darken
   nav
     background-color: transparent
+    #top-social
+      li:hover
+        background-color: black !important
     ul
       display: flex
       justify-content: flex-end
@@ -45,7 +48,6 @@ header
 
       #rnsit-logo
         float: left!important
-        margin-right: auto
         background:
           image: url('../images/logo.png')
           size: contain
@@ -57,6 +59,10 @@ header
         &:hover
           background-color: transparent
           transform:scale(1.1)
+      #name
+        margin-right: auto
+        color: white
+
 
 #splash-screen
   color: #c6c6c6
@@ -83,6 +89,7 @@ header
       ul
         li
           list-style: none
+          color: #212121
           margin-bottom: 10px
           font-size: 18px
           display: block
@@ -106,11 +113,19 @@ header
   z-index:2
 
 .heading
-  margin: 10vh 0
   font-size: 44px
-
+  margin-top: 0
+  margin-bottom: 0px !important
 #creds
+  padding: 10vh 0px 15vh 0px
+  background-color: #f5f5f5
   font-family: 'Josefin Sans', sans-serif
+  #hr1
+    width: 10%
+    border-top: 4px solid black
+    margin-bottom: 10vh
+    margin-top: 10px
+    border-radius: 2em
   .row
     .col-md-3
       height: 200px
@@ -122,15 +137,13 @@ header
   font-family: 'Josefin Sans', sans-serif
   font-size: 1.4em
   padding-left: 3em
-  margin: 20vh 0px
-  background-color: #f5f5f5
   .col-md-6
     .container
       padding: 1em 2em
       h3
         border: 1px solid black
         display: inline-block
-        padding: .5em 1em
+        padding: .5em 1.5em
         margin: .5em
         margin-bottom: 1em
         font-weight: bold
@@ -143,3 +156,18 @@ header
           color: white
           padding: .3em 1em
           margin: 20px 0px
+
+footer
+  background-color: black
+  margin: 0 !important
+  ul
+    display: flex
+    justify-content: center
+    margin: 0
+    li
+      margin: 20px 10px
+      list-style: none
+      min-width: 100px
+      text-align: center
+      a
+        color: white !important
