@@ -110,6 +110,45 @@ header nav ul #name {
   font-size: 20px;
 }
 
+.extraC-card {
+  overflow-y: scroll;
+  height: 75vh;
+}
+
+.extraC-card .card-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: wrap;
+  overflow-y: scroll;
+  height: 50vh;
+}
+
+.extraC-card .card-wrap hr {
+  margin: 0;
+  border-top: 1px solid #c3c3c3;
+}
+
+.extraC-card .card-wrap .card {
+  display: inline-block;
+  background-color: white;
+  width: 300px;
+  margin: 20px 20px;
+  color: black;
+  border-radius: 4px;
+}
+
+.extraC-card .card-wrap .card .card-img {
+  height: 200px;
+  width: 100%;
+  border-radius: 4px 4px 0px 0px;
+  background-size: cover;
+  background-image: url("../images/img.jpg");
+}
+
+.extraC-card .card-wrap .card .card-desc {
+  padding: 1em;
+}
+
 #splash-screen {
   font-size: 1.5em;
   height: 100%;
