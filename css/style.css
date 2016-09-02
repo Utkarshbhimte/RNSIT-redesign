@@ -110,17 +110,13 @@ header nav ul #name {
   font-size: 20px;
 }
 
+.stat-card::-webkit-scrollbar {
+  display: none;
+}
+
 .extraC-card {
   overflow-y: scroll;
   height: 75vh;
-}
-
-.extraC-card .card-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  flex-flow: wrap;
-  overflow-y: scroll;
-  height: 50vh;
 }
 
 .extraC-card .card-wrap hr {
@@ -147,6 +143,10 @@ header nav ul #name {
 
 .extraC-card .card-wrap .card .card-desc {
   padding: 1em;
+}
+
+.extraC-card::-webkit-scrollbar {
+  display: none;
 }
 
 #splash-screen {

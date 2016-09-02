@@ -81,15 +81,12 @@ header
       display: inline-block
     p
       font-size: 20px
+.stat-card::-webkit-scrollbar
+  display: none
 .extraC-card
   overflow-y: scroll
   height: 75vh
   .card-wrap
-    display: flex
-    flex-wrap: wrap
-    flex-flow: wrap
-    overflow-y: scroll
-    height: 50vh
     hr
       margin: 0
       border-top: 1px solid #c3c3c3
@@ -109,6 +106,8 @@ header
           image: url('../images/img.jpg')
       .card-desc
         padding: 1em
+.extraC-card::-webkit-scrollbar
+  display: none
 #splash-screen
   font-size: 1.5em
   height: 100%
