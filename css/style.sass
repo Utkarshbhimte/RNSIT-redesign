@@ -45,6 +45,13 @@ header
             border-top: px solid white
             border-bottom: 8px solid white
             min-width: 100px
+          &.active
+            color: white
+            background-color: black
+            padding: 1em
+            border-top: px solid white
+            border-bottom: 8px solid white
+            min-width: 100px
 
       #rnsit-logo
         float: left!important
@@ -72,16 +79,23 @@ header
     padding-top: 23vh
     h1
       font-size: 72px
-.stat-card
+.stat-wrap
   overflow-y: auto
   height: 60vh
+  padding-right: 2em
   .card
+    display: flex
     img
       display: inline-block
     p
       font-size: 20px
-.stat-card::-webkit-scrollbar
-  display: none
+.stat-wrap::-webkit-scrollbar
+  width: 5px
+  background-color: transparentize(black, .5)
+.stat-wrap::-webkit-scrollbar-thumb
+  background-color: white
+  width: 5px
+  border-radius: 1em
 .extraC-card
   overflow-y: scroll
   height: 75vh
@@ -135,3 +149,23 @@ header
       padding: .3em 1.6em
       margin-top: 1em
       text-decoration: none
+    .ghost:nth-child(2)
+      margin-right: 3em
+#address-wrap
+  display: flex
+  padding-left: 1em
+  justify-content: space-between
+  color: black
+  #address
+    padding: 3em 0
+    font-size: 1.4em
+    color: #c3c3c3
+  a
+    display: inline-block
+    text-decoration: none
+    background-color: black
+    color: white
+    padding: .3em 1em
+    margin: 20px 0px
+  #gmap
+   background-color: #f5f5f5
