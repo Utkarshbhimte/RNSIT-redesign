@@ -98,10 +98,6 @@ header nav ul #name {
   height: 60vh;
 }
 
-.stat-card .card {
-  display: flex;
-}
-
 .stat-card .card img {
   display: inline-block;
 }
@@ -117,6 +113,12 @@ header nav ul #name {
 .extraC-card {
   overflow-y: scroll;
   height: 75vh;
+}
+
+.extraC-card .card-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .extraC-card .card-wrap hr {
