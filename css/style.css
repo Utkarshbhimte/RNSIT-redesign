@@ -1,14 +1,16 @@
 @import 'https://fonts.googleapis.com/css?family=Abel|Josefin+Sans|Ubuntu+Condensed';
 html {
   margin: 0;
-  font-family: 'Josefin Sans', sans-serif;
   padding: 0;
   overflow-x: hidden;
 }
 
-header {
-  height: 80vh;
+* {
   font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+  height: 100vh;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -246,6 +248,21 @@ header nav ul #name {
 
 #address-wrap #gmap {
   background-color: #f5f5f5;
+}
+
+#past {
+  padding: 2em;
+  margin: 4em auto;
+}
+
+#past h1 {
+  font-size: 4em;
+  text-align: center;
+}
+
+#past .row {
+  display: flex;
+  align-items: center;
 }
 
 footer {
