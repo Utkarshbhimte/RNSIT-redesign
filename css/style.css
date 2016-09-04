@@ -94,7 +94,6 @@ header nav ul #rnsit-logo:hover {
 
 header nav ul #name {
   margin-right: auto;
-  color: white;
 }
 
 .main-wrap {
@@ -195,6 +194,7 @@ header nav ul #name {
 
 #splash-screen .row .col-md-6:nth-child(1) {
   padding-left: 10vw !important;
+  height: 45%;
 }
 
 #splash-screen .row .col-md-6:nth-child(1) h1 {
