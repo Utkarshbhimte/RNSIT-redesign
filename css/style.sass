@@ -16,66 +16,65 @@ header
     size: cover
     repeat: no-repeat
     background-blend-mode: darken
-  nav
+  .nav
     background-color: transparent
-    #top-social
-      li
-        width: auto
-      li:hover
-        background-color: black !important
-    ul
-      display: flex
-      justify-content: flex-end
-      align-items: center
-      padding: 1vh 5vw
-      width: 100%
-      position: absolute
-      height: 100px
-      li:nth-child(5)
-        width: 9em
-      li
-        list-style: none
-        margin: 5px 10px
-        font-size: 18px
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    padding: 1vh 5vw
+    width: 100%
+    position: absolute
+    height: 100px
+    li:nth-child(5)
+      width: 9em
+    li
+      list-style: none
+      margin: 5px 10px
+      font-size: 18px
+      white-space: nowrap
+      width: 10em
+      display: inline-block
+      text-align: center
+      a
         white-space: nowrap
-        width: 7em
-        display: inline-block
-        text-align: center
-        a
-          white-space: nowrap
-          color: black
-          text-decoration: none !important
-          transition: all .3s ease-in-out
-          &:hover
-            color: white
-            background-color: black
-            padding: 1em
-            border-top: px solid white
-            border-bottom: 8px solid white
-            min-width: 100px
-          &.active
-            color: white
-            background-color: black
-            padding: 1em
-            border-top: px solid white
-            border-bottom: 8px solid white
-            min-width: 100px
+        color: black
+        text-decoration: none !important
 
-      #rnsit-logo
-        float: left!important
-        background:
-          image: url('../images/logo.png')
-          size: contain
-          position: center
-          repeat: no-repeat
-        height: 100%
-        width: 100px
-        transition:all .3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-        &:hover
-          background-color: transparent
-          transform:scale(1.1)
-      #name
-        margin-right: auto
+        &.active
+          color: white
+          background-color: black
+          padding: 1em
+          border-top: px solid white
+          border-bottom: 8px solid white
+          min-width: 100px
+    .dropdown-menu
+      flex-direction: column
+      li
+        margin: 0
+        width: 13em
+        cursor: pointer
+        a
+          padding: .5em .5em
+          transition: all .3s ease-in-out
+    #rnsit-logo
+      display: block
+      margin-left: 3em
+      float: left!important
+      background:
+        image: url('../images/logo.png')
+        size: contain
+        position: center
+        repeat: no-repeat
+      height: 100%
+      min-height: 80px
+      width: 100px
+      transition:all .3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      &:hover
+        background-color: transparent
+        transform:scale(1.1)
+    #name
+      margin-right: auto
+      text-align: left
 
 .main-wrap
   color: #212121
@@ -166,7 +165,6 @@ header
   #address
     padding: 3em 0
     font-size: 1.4em
-    color: #c3c3c3
   a
     display: inline-block
     text-decoration: none
@@ -185,11 +183,17 @@ header
   .row
     display: flex
     align-items: center
+    flex-wrap: wrap
+    justify-content: center
+    img
+    -webkit-filter: grayscale(100%) /* Chrome, Safari, Opera */
+    filter: grayscale(100%)
 footer
   background-color: #212121
-  color: white
   padding: 2em .5em
   font-family: 'Josefin Sans', sans-serif
+  h4, #address, #address strong
+    color: white !important
   hr
     margin: 0px 0px 7px 0px
   .row
@@ -202,6 +206,8 @@ footer
     li
       list-style: none
       margin: 10px
-  a
-    color: currentColor
-    text-decoration: none
+      a
+        color: white
+        &:hover
+          color: white
+          text-decoration: none
