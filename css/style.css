@@ -232,6 +232,11 @@ header .nav #name {
   margin: 20px 0px;
 }
 
+.simple-btn:hover {
+  color: white;
+  text-decoration: none;
+}
+
 #contact-form {
   width: 70%;
   display: block;
@@ -257,6 +262,7 @@ header .nav #name {
   line-height: 26px !important;
   padding: 1em 2em;
   margin: 1em;
+  margin-bottom: .1em;
   width: 78.5%;
   outline: none;
   border: none;
@@ -264,8 +270,10 @@ header .nav #name {
 }
 
 #contact-form a {
+  display: inline-block;
   width: auto;
   font-size: 24px;
+  margin-left: .8em;
   padding-left: 1em;
 }
 
