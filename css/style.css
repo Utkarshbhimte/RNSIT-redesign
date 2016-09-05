@@ -11,7 +11,7 @@ html {
 
 header {
   min-height: 100vh;
-  background-color: #f5f5f5;
+  background-color: #FFF;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -28,7 +28,7 @@ header .nav {
   position: fixed;
   box-shadow: 0px 0px 20px #c3c3c3;
   z-index: 3;
-  height: 100px;
+  height: 130px;
   transition: all .3s ease;
 }
 
@@ -112,6 +112,29 @@ header .nav #name {
 
 .main-wrap .content-wrap h1 {
   font-size: 72px;
+}
+
+#from-po {
+  font-size: 18px;
+  color: white;
+  padding: 3em 0;
+  background-image: url(http://www.orange-business.com/files/styles/blog_post_460x300/public/Blog/fotolia_38071420_s_614x318.jpg?itok=ubfZGN_A);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: color-dodge;
+  background-attachment: fixed;
+}
+
+#from-po h1 {
+  font-size: 3.5em;
+  text-align: center;
+}
+
+#from-po #po-officer {
+  height: 250px;
+  background-color: #f5f5f5;
 }
 
 .stat-wrap {
@@ -204,6 +227,7 @@ header .nav #name {
   transition: 1s all ease;
   padding: 0;
   margin-bottom: -30px;
+  margin-top: 65px;
 }
 
 #splash-screen .row .col-md-6:nth-child(1):hover {
@@ -310,6 +334,7 @@ header .nav #name {
   justify-content: center;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+  filter-filter: grayscale(0%);
 }
 
 footer {

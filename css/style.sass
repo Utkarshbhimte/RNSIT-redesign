@@ -12,7 +12,7 @@ html
 header
   min-height: 100vh
   background:
-    color: #f5f5f5
+    color: #FFF
     attachment: fixed
     size: cover
     repeat: no-repeat
@@ -27,7 +27,7 @@ header
     position: fixed
     box-shadow: 0px 0px 20px #c3c3c3
     z-index: 3
-    height: 100px
+    height: 130px
     transition: all .3s ease
     li:nth-child(5)
       width: 9em
@@ -88,6 +88,24 @@ header
     padding-top: 23vh
     h1
       font-size: 72px
+#from-po
+  font-size: 18px
+  color: white
+  padding: 3em 0
+  background:
+    image:url(http://www.orange-business.com/files/styles/blog_post_460x300/public/Blog/fotolia_38071420_s_614x318.jpg?itok=ubfZGN_A)
+    repeat: no-repeat
+    size: cover
+    position: right
+    color: transparentize(black, .5)
+    blend-mode: color-dodge
+    attachment: fixed
+  h1
+    font-size: 3.5em
+    text-align: center
+  #po-officer
+    height: 250px
+    background-color: #f5f5f5
 .stat-wrap
   height: auto
   padding-right: 2em
@@ -150,6 +168,8 @@ header
         transition: 1s all ease
         padding: 0
         margin-bottom: -30px
+        margin-top: 65px
+
       &:hover
         translate: scale(1.1)
     .ghost
@@ -227,6 +247,7 @@ header
     img
     -webkit-filter: grayscale(100%) /* Chrome, Safari, Opera */
     filter: grayscale(100%)
+      filter: grayscale(0%)
 footer
   background-color: #212121
   padding: 2em 0 0 0
