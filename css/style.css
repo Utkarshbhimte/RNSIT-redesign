@@ -314,12 +314,20 @@ header .nav #name {
 
 footer {
   background-color: #212121;
-  padding: 2em .5em;
+  padding: 2em 0 0 0;
   font-family: 'Josefin Sans', sans-serif;
 }
 
-footer h4, footer #address, footer #address strong {
+footer h4, footer #address, footer #address strong, footer h5 {
   color: white !important;
+}
+
+footer h5 {
+  font-size: 16px;
+  padding: .5em 0 .5em 3em;
+  margin: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 footer hr {
