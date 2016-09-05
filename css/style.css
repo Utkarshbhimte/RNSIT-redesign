@@ -138,6 +138,27 @@ header .nav #name {
   box-shadow: 0px 12px 17px -9px black;
 }
 
+.upcoming-wrap {
+  height: auto;
+  padding-right: 2em;
+}
+
+.upcoming-wrap .card {
+  display: flex;
+  margin: 2em 0;
+}
+
+.upcoming-wrap .card img {
+  display: inline-block;
+  height: 300px;
+  float: left;
+  margin: .5em 2em;
+}
+
+.upcoming-wrap .card p {
+  font-size: 20px;
+}
+
 .stat-wrap {
   height: auto;
   padding-right: 2em;
@@ -348,6 +369,7 @@ footer {
   background-color: #212121;
   padding: 2em 0 0 0;
   font-family: 'Josefin Sans', sans-serif;
+  margin-top: 3em;
 }
 
 footer h4, footer #address, footer #address strong, footer h5 {
