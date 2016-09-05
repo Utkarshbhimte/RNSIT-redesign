@@ -262,11 +262,17 @@ header .nav #name {
   text-decoration: none;
 }
 
+.contact-me-wrap {
+  background-color: #f5f5f5;
+  padding-bottom: 3em;
+}
+
 #contact-form {
   width: 70%;
   display: block;
   margin: 0 auto;
   margin-bottom: 3em;
+  background-color: #f5f5f5;
 }
 
 #contact-form input {
@@ -352,8 +358,8 @@ footer h5 {
   font-size: 16px;
   padding: .5em 0 .5em 3em;
   margin: 0;
+  margin-top: 1em;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
 }
 
 footer hr {
