@@ -135,6 +135,7 @@ header .nav #name {
 #from-po #po-officer {
   height: 250px;
   background-color: #f5f5f5;
+  box-shadow: 0px 12px 17px -9px black;
 }
 
 .stat-wrap {
